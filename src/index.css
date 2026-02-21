@@ -21,7 +21,7 @@ body {
   background-image: url('./assets/starfield.jpeg');
   background-size: cover;
 
-  height: 120px;
+  height: 130px;
   /* background: linear-gradient(90deg, #4d4d4d 0%, #000000 100%); */
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 
@@ -38,10 +38,24 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 50px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #171717 100%);
+  height: 45px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #0000007d 100%);
 }
 
+.header-top > .container {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 2px 15px 2px;
+  border-radius: 18px;
+
+  /* backdrop-filter: blur(0.25px); */
+
+  box-shadow:
+  0 0 7px rgba(165, 165, 165, 0.4),
+  0 0 2px rgba(255, 255, 255, 0.133),
+  0 0 50px rgba(255,255,255,0.08);
+
+  z-index: 1;
+}
 
 .header-logo {
   width: 60px;
@@ -51,6 +65,7 @@ body {
   font-size: 2.1rem;
   letter-spacing: 4px;
   font-variant-caps: small-caps;
+  padding-right: 7px;
 }
 
 .header-banner {

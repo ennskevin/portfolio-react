@@ -6,11 +6,12 @@ export default function Header() {
             <header>
 
                 <div className="header-top">
-                    <div className="container">
 
+                    <div className="container">
                         <img className="header-logo" src={logo} alt=""></img>
                         <h1>Portfolio</h1>
                     </div>
+                    
                 </div>
 
                 <div className="header-banner">
