@@ -37,7 +37,8 @@ jobs:
             --delete \
             --exclude "*" \
             --include "index.html" \
-            --include "assets/*"
+            --include "assets/*" \
+            --include "folder2.png"
 
       - name: Invalidate CloudFront cache
         run: |
