@@ -1,8 +1,8 @@
 import Project from "./Project"
 
 export default function Main() {
-    const projects = []
-    const projectElements = []
+    // const projects = []
+    // const projectElements = []
 
     return (
         <>
