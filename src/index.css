@@ -1,19 +1,34 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
 body {
+  min-height: 100dvh;
   margin: 0 auto;
+  padding: 0;
+  line-height: 1.5;
   font-family: Commisioner, sans-serif;
   background-color: white;
-  min-width: 440px;
+  color: black;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  width: min(100%, 960px);
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
+
+
 
 .header-top {
   position: relative;
@@ -22,7 +37,6 @@ body {
   background-size: cover;
 
   height: 130px;
-  /* background: linear-gradient(90deg, #4d4d4d 0%, #000000 100%); */
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 
   display: flex;
@@ -42,12 +56,17 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, #0000007d 100%);
 }
 
-.header-top > .container {
+.header-top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
   background-color: rgba(0, 0, 0, 0.15);
-  padding: 2px 15px 2px;
+  padding: 0 15px 0;
   border-radius: 18px;
 
-  /* backdrop-filter: blur(0.25px); */
+  /* backdrop-filter: blur(0.5px); */
 
   box-shadow:
   0 0 7px rgba(165, 165, 165, 0.4),
@@ -57,19 +76,22 @@ body {
   z-index: 1;
 }
 
+
+
 .header-logo {
   width: 60px;
 }
 
-.header-top > .container > h1 {
+.header-top h1 {
   font-size: 2.1rem;
   letter-spacing: 4px;
   font-variant-caps: small-caps;
   padding-right: 7px;
+  margin: 18px 0;
 }
 
 .header-banner {
-  height: 30px;
+  height: 60px;
 
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
   padding: 15px;
@@ -80,4 +102,8 @@ body {
   font-variant-caps: small-caps;
   letter-spacing: 2px;
   font-weight: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
