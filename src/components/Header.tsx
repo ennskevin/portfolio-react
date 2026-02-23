@@ -3,11 +3,11 @@ import logo from '../assets/folder2.png'
 export default function Header() {
     return (
         <>
-            <header>
+            <header className="site-header">
 
                 <div className="header-top">
 
-                    <div className="container">
+                    <div className="header-top-content">
                         <img className="header-logo" src={logo} alt=""></img>
                         <h1>Portfolio</h1>
                     </div>
@@ -15,7 +15,7 @@ export default function Header() {
                 </div>
 
                 <div className="header-banner">
-                    <span className="programmer-name container">kevin enns</span>
+                    <span className="header-banner-content">kevin enns</span>
                 </div>
 
             </header>
