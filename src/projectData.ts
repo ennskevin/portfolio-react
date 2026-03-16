@@ -14,7 +14,7 @@ export const projectData = [
     {
         name: "Polymnia",
         imgUrl: polymniaImg,
-        href: "https://www.ennskevin.com/meme_generator"
+        href: "https://www.ennskevin.com/polymnia"
     },
     {
         name: "Tenzies",
