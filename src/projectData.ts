@@ -3,12 +3,18 @@ import tenziesImg from "./project-images/tenzies.png"
 import roboChefImg from "./project-images/robo-chef.png"
 import hangmanImg from "./project-images/hangman.png"
 import memeGeneratorImg from "./project-images/meme-generator.png"
+import polymniaImg from "./project-images/polymnia.png"
 
 export const projectData = [
     {
         name: "Rick Index",
         imgUrl: rickIndexImg,
         href: "https://www.ennskevin.com/rick_index"
+    },
+    {
+        name: "Polymnia",
+        imgUrl: polymniaImg,
+        href: "https://www.ennskevin.com/meme_generator"
     },
     {
         name: "Tenzies",
